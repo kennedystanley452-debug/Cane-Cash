@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cane Cash - Visionary Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        body { background-color: #000; color: #fff; font-family: 'Inter', sans-serif; overflow-x: hidden; }
+        .neon-border { border: 1px solid rgba(255, 20, 147, 0.3); box-shadow: 0 0 15px rgba(255, 20, 147, 0.2); }
+        .neon-text { color: #ff1493; text-shadow: 0 0 10px rgba(255, 20, 147, 0.8); }
+        .neon-bg { background: #ff1493; box-shadow: 0 0 20px rgba(255, 20, 147, 0.6); }
+        .glass-card { background: rgba(20, 20, 20, 0.8); backdrop-filter: blur(10px); border-radius: 20px; border: 1px solid rgba(255, 255, 255, 0.1); }
+        .feature-card { background: rgba(30, 30, 30, 0.5); border: 1px solid rgba(255, 20, 147, 0.2); border-radius: 12px; transition: 0.3s; }
+        .big-c { position: absolute; right: 20px; top: 10px; font-size: 120px; font-weight: 800; color: rgba(255, 20, 147, 0.1); text-shadow: 0 0 30px rgba(255, 20, 147, 0.4); z-index: 0; }
+    </style>
+</head>
+<body class="p-4 md:p-8">
+
+    <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-6">
+        
+        <div class="lg:col-span-8 space-y-6">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center gap-4">
+                    <div class="w-12 h-12 rounded-full border-2 border-[#ff1493] flex items-center justify-center neon-text font-bold">CC</div>
+                    <div>
+                        <h1 class="text-xl font-bold">Hello, Cane! 👋</h1>
+                        <p class="text-gray-400 text-xs">Welcome back</p>
+                    </div>
+                </div>
+                <div class="flex gap-4">
+                    <i class="fa-solid fa-bell text-xl"></i>
+                    <i class="fa-solid fa-qrcode text-xl"></i>
+                </div>
+            </div>
+
+            <div class="glass-card p-6 relative overflow-hidden neon-border">
+                <div class="big-c italic">C</div>
+                <div class="relative z-10">
+                    <p class="text-gray-400 text-sm">Total Balance <i class="fa-solid fa-eye-slash ml-2"></i></p>
+                    <h2 class="text-4xl font-bold mt-2">$12,450.60</h2>
+                    <p class="text-xs text-gray-500">USD <i class="fa-solid fa-chevron-down"></i></p>
+                    <div class="flex gap-4 mt-6">
+                        <button class="neon-bg px-8 py-2 rounded-xl font-bold text-sm">Add Cash</button>
+                        <button class="bg-zinc-800 px-8 py-2 rounded-xl font-bold text-sm border border-zinc-700">Cash Out</button>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="flex justify-between mb-4">
+                    <h3 class="font-bold">Quick Actions</h3>
+                    <span class="text-pink-500 text-xs">View All</span>
+                </div>
+                <div class="grid grid-cols-4 md:grid-cols-6 gap-4 text-center text-[10px]">
+                    <div class="space-y-2"><div class="w-12 h-12 mx-auto rounded-full border border-pink-900 flex items-center justify-center"><i class="fa-solid fa-paper-plane"></i></div><p>SEND</p></div>
+                    <div class="space-y-2"><div class="w-12 h-12 mx-auto rounded-full border border-pink-900 flex items-center justify-center"><i class="fa-solid fa-download"></i></div><p>REQUEST</p></div>
+                    <div class="space-y-2"><div class="w-12 h-12 mx-auto rounded-full border border-pink-900 flex items-center justify-center"><i class="fa-solid fa-file-invoice"></i></div><p>PAY BILLS</p></div>
+                    <div class="space-y-2"><div class="w-12 h-12 mx-auto rounded-full border border-pink-900 flex items-center justify-center"><i class="fa-solid fa-mobile-screen"></i></div><p>TOP UP</p></div>
+                </div>
+            </div>
+
+            <div class="neon-border rounded-2xl p-6 flex justify-between items-center bg-gradient-to-r from-black to-zinc-900">
+                <div>
+                    <h4 class="font-bold">Invite & Earn</h4>
+                    <p class="text-gray-400 text-xs mb-4">Invite friends and earn amazing rewards!</p>
+                    <button class="neon-bg px-6 py-1.5 rounded-lg text-xs">Invite Now</button>
+                </div>
+                <i class="fa-solid fa-gift text-5xl text-pink-600"></i>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="glass-card p-4 text-center neon-border">
+                    <i class="fa-solid fa-piggy-bank text-pink-500 mb-2"></i>
+                    <p class="text-[10px]">Savings</p>
+                    <p class="font-bold">$2,350.00</p>
+                </div>
+                <div class="glass-card p-4 text-center neon-border">
+                    <i class="fa-solid fa-credit-card text-pink-500 mb-2"></i>
+                    <p class="text-[10px]">Cane Card</p>
+                    <p class="text-[8px] opacity-50">**** 4567</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="lg:col-span-4 space-y-4">
+            <div class="flex justify-between items-center mb-4">
+                <h3 class="font-bold">All Features</h3>
+                <span class="text-pink-500 text-xs">Edit</span>
+            </div>
+            <div class="grid grid-cols-2 gap-3">
+                <div class="feature-card p-4 text-center"><i class="fa-solid fa-headset text-pink-500 block mb-1"></i><span class="text-[10px]">Customer Care</span></div>
+                <div class="feature-card p-4 text-center"><i class="fa-solid fa-bitcoin-sign text-pink-500 block mb-1"></i><span class="text-[10px]">Crypto</span></div>
+                <div class="feature-card p-4 text-center"><i class="fa-solid fa-fingerprint text-pink-500 block mb-1"></i><span class="text-[10px]">Biometric</span></div>
+                <div class="feature-card p-4 text-center"><i class="fa-solid fa-microphone text-pink-500 block mb-1"></i><span class="text-[10px]">Voice Lock</span></div>
+                <div class="feature-card p-4 text-center"><i class="fa-solid fa-user-shield text-pink-500 block mb-1"></i><span class="text-[10px]">Face ID</span></div>
+                <div class="feature-card p-4 text-center"><i class="fa-solid fa-shield-halved text-pink-500 block mb-1"></i><span class="text-[10px]">Password</span></div>
+                <div class="feature-card p-4 text-center text-xs border-pink-600 bg-pink-900/20 col-span-2">
+                    <p class="text-[10px] text-gray-300">Admin Control Room</p>
+                    <p class="text-pink-400 font-bold">Cypher AI / Cane Cypher AI</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="fixed bottom-0 left-0 right-0 h-20 bg-black border-t border-zinc-800 flex justify-around items-center px-6">
+        <i class="fa-solid fa-house text-pink-500"></i>
+        <i class="fa-solid fa-list-ul text-gray-500"></i>
+        <div class="w-14 h-14 neon-bg rounded-full flex items-center justify-center -mt-10 border-4 border-black text-2xl font-bold">$</div>
+        <i class="fa-solid fa-credit-card text-gray-500"></i>
+        <i class="fa-solid fa-user text-gray-500"></i>
+    </div>
+
+</body>
+</html>
